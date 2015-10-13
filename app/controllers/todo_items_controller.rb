@@ -11,7 +11,7 @@ class TodoItemsController < ApplicationController
   def destroy
 
     if @todo_item.destroy
-      flash[:alert] = "Done"
+      flash[:success] = "Done"
     else
       flash[:error] = "Todo list no done"
     end
